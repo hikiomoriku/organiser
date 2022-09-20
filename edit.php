@@ -14,7 +14,7 @@ $id = $_GET['id'];
             <textarea name="body"><?php echo $tips[$id][1]; ?></textarea>
             </div>
             <div>
-            <input type="submit" value="Отправить">
+            <input type="submit" value="Сохранить">
             </div>
         </form>
     </body>

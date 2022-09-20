@@ -1,7 +1,9 @@
 <?php
 require('./auth.php');
+require('./file.php');
 echo "Привет, Артём!";
-$tips= require('./tips.php');
+$tips= readTips();
+$jsontips = json_encode($tips, JSON_UNESCAPED_UNICODE); 
 ?>
 <nav>
     <button>Создать</button>
@@ -9,6 +11,9 @@ $tips= require('./tips.php');
     <button>Найти</button>
 </nav>
 <div>
+    <?php
+    echo $jsontips;
+    ?>
     <table>
     <?php foreach($tips as $k=>$tip) :?>
         <tr>
