@@ -6,6 +6,7 @@ function readTips () {
     return $a;
 }
 function saveTips ($tips) {
-    $json = json_encode ($tips);
+    $json = json_encode ((array) $tips, JSON_UNESCAPED_UNICODE); 
     return file_put_contents (FILENAME, $json);
+    return $tips;
 }

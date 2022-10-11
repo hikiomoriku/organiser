@@ -4,10 +4,9 @@ require('./file.php');
 $tips= require('./tips.php');
 $tips= readTips();
 $id = $_GET['id'];
-if ($id!="" && isset ($_POST["title"])) {
-    $tips[$id][0]= ($_POST["title"]);
-    $tips[$id][1]= ($_POST["body"]);
-    saveTips ($tips);
+if ($id!="" ) {
+    unset($tips[$id]);
+    saveTips (array_values($tips));
     header('Location: /main.php');
     exit;
 }
