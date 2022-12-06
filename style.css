@@ -1,0 +1,19 @@
+.gh {
+    font-size: 24px;
+    color: rgba(86, 255, 232, 0.959);
+}
+.ghg {
+    border-radius: 10px;
+    font-family: 'Times New Roman';
+    text-align: center;
+    cursor: pointer;
+}
+.navigation {
+    display: flex;
+}
+.ver {
+    font-size: 30px;
+}
+.body {
+    background-color:rgba(0, 22, 224, 0.959);
+}

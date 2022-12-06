@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <form action="1.php" method="POST">
-            <input type="submit" value="Отправить">
-        Имя: <input type="text" name="name">
-         Пароль:<input type="password" name="password">
-        </form>
+        <form class="flex mf8 hg hhh gg" action="1.php" method="POST">
+            Имя: <input type="text" name="name">
+            Пароль:<input type="password" name="password">
+            <input class="ver" type="submit"  value="Отправить">
+         </form>
+        <style>
+            .flex {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                min-height: 100vh;
+            }
+            .flex * {
+                margin: 8px 0 4px 7px;
+            }
+        body {
+            background-color:rgba(66, 85, 248, 0.959);
+        }</style>
     </body>
 </html>
